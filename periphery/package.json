@@ -1,0 +1,24 @@
+{
+  "name": "periphery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "ganache": "ganache-cli host=http://127.0.0.1 fork=https://bsc-dataseed1.binance.org accounts=10 mnemonic=brownie port=8545",
+    "dev": "truffle migrate --reset --network development",
+    "bsc": "truffle migrate --reset --network bsc",
+    "testnet": "truffle migrate --reset --network testnet",
+    "compile": "truffle compile"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.4.0",
+    "@uniswap/lib": "^4.0.1-alpha",
+    "@uniswap/v2-core": "^1.0.1"
+  }
+}
